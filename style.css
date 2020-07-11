@@ -1,0 +1,15 @@
+#canvas{
+    border: 0px solid gray;
+    background-color: gray;
+}
+html{
+    background-color: black;
+}
+.labelRange{
+    font-weight: bold;
+    color: white;
+    display: flex;
+}
+.column{
+    float: left;
+}
