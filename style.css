@@ -1,6 +1,6 @@
 #canvas{
-    border: 0px solid gray;
-    background-color: gray;
+    border: 0px solid black;
+    background-color: black;
 }
 html{
     background-color: black;
@@ -12,4 +12,17 @@ html{
 }
 .column{
     float: left;
+}
+.homeButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #555555;
 }

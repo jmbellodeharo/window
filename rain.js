@@ -52,8 +52,6 @@ function draw (){
     ctx.fillStyle = 'rgb('+colorValue+', '+colorValue+', '+colorValue+')';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.save();
-   
     for (let i = 0; i < dropArray.length; i++) {
         
         // Colour drop
@@ -66,8 +64,6 @@ function draw (){
         
     }
     
-    ctx.restore();
-
     window.requestAnimationFrame(draw);
 
 }
