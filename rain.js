@@ -6,7 +6,9 @@ var dropArray = new Array();
 var canvas;  
 var ctx;
 
+
 function first(){  
+
     canvas = document.getElementById('canvas');
     
     // Canvas style and canvas size have to be the same if you don't want
@@ -110,6 +112,7 @@ function getDrops(quantity, existentDrops=undefined){
     return drops
 }
 
+
 class drop {
     constructor(x, y, r, g, b, a, w, h) {
       this.x = x;
@@ -121,6 +124,7 @@ class drop {
       this.w = w;
       this.h = h;
       this.movement = Math.random() * velocityMultiplier;
+      //this.dropSound = new Audio("./sounds/drop1.mp3"); // Initializate sound
     }
 
     drawDrop(dropSize){
@@ -128,6 +132,7 @@ class drop {
 
         // If drop reachs bottom
         if(this.y > canvas.height){
+            //this.dropSound.play();
             this.y = 0;
             this.movement = Math.random() * velocityMultiplier;
         }
@@ -152,3 +157,4 @@ class drop {
         this.y = this.y + this.movement;
     }
   };
+
